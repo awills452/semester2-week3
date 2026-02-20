@@ -8,12 +8,13 @@
  */
 
 
+
 int main( void ) {
 
     // define and initialise variables for the problem data 
-    float salary;
-    float ni_rate;
-    float tax_rate;
+    float salary = 36250.00;        // Salary in £ (as per spec)
+    float ni_rate = 8.0;             // NI rate as a percentage
+    float tax_rate = 15.0;            // Tax rate as a percentage
     float tax_threshold = 12500.00;   // Tax-free allowance
     
     float ni_contribution;
@@ -21,16 +22,6 @@ int main( void ) {
     float taxable_income;
     float tax_contribution;
     float take_home_salary;
-
-    // Get input from user
-    printf("Enter salary (£): ");
-    scanf("%f", &salary);
-    
-    printf("Enter NI rate (%%): ");
-    scanf("%f", &ni_rate);
-    
-    printf("Enter tax rate (%%): ");
-    scanf("%f", &tax_rate);
 
     // calculate the deductions and final take-home salary
     
@@ -53,7 +44,6 @@ int main( void ) {
     take_home_salary = salary_after_ni - tax_contribution;
 
     // Use only these print statement with appropriate formatting and variable names
-    printf("\n--- Results ---\n");
     printf("Salary £%.2f\n", salary);
     printf("NI contribution £%.2f\n", ni_contribution);
     printf("Tax contribution £%.2f\n", tax_contribution);
