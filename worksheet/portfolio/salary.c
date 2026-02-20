@@ -1,13 +1,4 @@
-
 #include <stdio.h>
-
-/*
- * Potrfolio submission
- * Name: anthony wills
- * ID: 201961071
- */
-
-
 
 int main( void ) {
 
